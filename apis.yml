@@ -1,7 +1,24 @@
 aid: osmo
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/osmo.png
 name: Osmo
-description: 'Osmo is a company surfaced as a portfolio company of accel, gv and added to the API Evangelist
-  network as a stub for enrichment. Sector: consumer. This profile is a lead awaiting the enrichment pipeline.'
+description: 'Osmo (Tangible Play) makes hands-on, screen-interactive learning games
+  for iPad and Fire tablet that pair a physical reflector base placed over the device
+  camera with digital games spanning math, coding, spelling, drawing, and problem-solving
+  for children. Backed by Accel and GV, Osmo is a consumer educational-technology
+  brand that sells hardware kits and companion apps direct to families and schools.
+  As of this enrichment pass it does not publish a public developer API, SDK, or developer
+  portal; this profile captures its public web identity and domain-security posture.'
 url: https://raw.githubusercontent.com/api-evangelist/osmo/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +29,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
 - Consumer
+- Education
+- EdTech
+- Children
+- Games
+- Hardware
+- Learning
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +46,18 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/osmo-domain-security.yml
 - type: Website
-  url: http://www.playosmo.com
+  url: https://www.playosmo.com
+- type: Support
+  url: https://www.playosmo.com/pages/contact
+- type: PrivacyPolicy
+  url: https://www.playosmo.com/policies/privacy-policy
+- type: TermsOfService
+  url: https://www.playosmo.com/policies/terms-of-service
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
